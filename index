@@ -1,9 +1,31 @@
 <html>
+<!Styles>
+ <style>
+    body {
+      background-color: #73C7FF;
+      color: black;
+      font-size: 30px;
+      font-family: Comic Sans MS;
+      text-align: center;
+    }
+    </style>
+  <br>
+
+<!Page title, Favicon>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<!Body>
 <body>
-Hi world!
+
+
+<!Highlighted text>
+<h1 style="background-color:#FFF173;">This is a highlighted heading.</h1>
+<p style="background-color:#F173FF;">This is a highlighted paragraph.</p>
+
+<!Linked styles for images>
+
 </body>
-
-
-
-
 </html>

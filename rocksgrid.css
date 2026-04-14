@@ -1,0 +1,16 @@
+.image-grid {
+  display: grid;
+  /* Creates 3 columns of equal width */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Adds space between the images */
+  gap: 10px; 
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  /* Ensures images cover the area without stretching */
+  object-fit: cover; 
+  /* Optional: makes images square */
+  aspect-ratio: 1 / 1; 
+}

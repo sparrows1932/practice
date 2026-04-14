@@ -1,0 +1,6 @@
+img {
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+img:hover {
+  transform: scale(1.1); /* Increases size by 10% */
+}

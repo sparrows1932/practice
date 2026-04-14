@@ -1,25 +1,66 @@
 <html>
-<!Styles>
- <style>
-    body {
-      background-color: #73C7FF;
-      color: black;
-      font-size: 30px;
-      font-family: Comic Sans MS;
-      text-align: center;
-    }
-    </style>
-  <br>
 
-<!Page title, Favicon>
+    <!-- 1. HEADER SECTION -->
+    <center>
+        <h1>Hello World!</h1>
+     
+        <!-- The Scrolling Marquee -->
+        <marquee bgcolor="#ffff00" width="50%"> 
+            *** LATEST UPDATE: I finally figured out how to make a marquee! *** 
+        </marquee>
+    </center>
+
+    <hr>
+
+    <!-- 2. MAIN LAYOUT (Using a table for that old-school sidebar look) -->
+    <table width="100%" border="0">
+        <tr>
+            <!-- Sidebar -->
+            <td width="20%" valign="top" bgcolor="#e0e0e0">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Cool Rocks</a></li>
+                    <li><a href="#">Guestbook</a></li>
+                </ul>
+                
+                <h3>Status</h3>
+                <p>Mood: 🍏 Hungry</p>
+                
+
+            <!-- Main Content Area -->
+            <td width="80%" valign="top" style="padding: 20px;">
+                <h2 class="blink" style="color: red;">Check this out!</h2>
+                <p>Practicing is <i>actually</i> pretty fun.</p>
+                
+                <details>
+                    <summary><b>Click for a Secret</b></summary>
+                    <p>This was supposed to be secret!</p>
+                </details>
+
+                <br>
+               
+    <!-- 3. FOOTER SECTION -->
+    <center>
+        <p>You are visitor number:</p>
+        <img src="https://sparrows1932.github.io/practice/images/nemo.jpg" alt="Hit Counter">
+        <br>
+        <small>Did you know the ocean is pretty deep?</small>
+    </center>
+
+</body>
+
+<br>
+     
 <head>
-  <title>My Page Title</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Now, Fish</title>
+    <!-- A tiny bit of CSS in the head to make the "blink" work -->
+    <style>
+        body { background-color: #f0f0f0; font-family: "Courier New", Courier, monospace; color: #333; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .blink { animation: blink 1s step-start infinite; }
+    </style>
 </head>
-
-<!Body>
-<body>
-
 
 <!Highlighted text>
 <h1 style="background-color:#FFF173;">This is a highlighted heading.</h1>
@@ -28,7 +69,6 @@
 <!Linked styles for hovering/stacked images>
  <link rel="stylesheet" href="hoverimage.css">
    <div class="team-container">
-      <h2>Fish</h2>
       <div class="images-container">
         <img class="left" src="images/carp.jpg" alt="" />
         <img class="right" src="images/nemo.jpg" alt="" />
@@ -44,4 +84,5 @@
      <img class="center" src="https://sparrows1932.github.io/practice/images/nemo.jpg">
     </div>
 </body>
+           
 </html>

@@ -17,6 +17,11 @@
       if (userResponse === correctAnswer) {
         feedback.innerHTML = "Correct! The scientific name is <b>Castor canadensis</b>.";
         feedback.style.color = "green";
+        confetti({
+          particleCount: 150,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
       } else {
         feedback.innerHTML = "Incorrect. Please try again.";
         feedback.style.color = "red";

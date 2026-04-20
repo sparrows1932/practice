@@ -1,0 +1,48 @@
+<html>
+<style>
+  #art-canvas {
+    position: relative;
+    width: 1000px; /* Use a fixed ratio or percentage */
+    height: 600px;
+    background-image: url('practice/images/full-art.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  /* The transparent "Hotspot" */
+  .hotspot {
+    position: absolute;
+    cursor: pointer;
+    /* Use background: rgba(255, 0, 0, 0.3); to see them while testing! */
+    background: transparent; 
+  }
+
+  /* Position each clue area specifically */
+  #clue-beaver {
+    top: 45%;
+    left: 22%;
+    width: 10%;
+    height: 15%;
+  }
+
+  #clue-secret-door {
+    top: 10%;
+    left: 80%;
+    width: 5%;
+    height: 20%;
+  }
+</style>
+
+<div id="art-canvas">
+  <!-- Invisible clickable areas -->
+  <div id="clue-beaver" class="hotspot" onclick="showClue('You found a hidden beaver!')"></div>
+  <div id="clue-secret-door" class="hotspot" onclick="showClue('A faint clicking sound comes from the wall...')"></div>
+</div>
+
+<script>
+  function showClue(message) {
+    alert(message);
+  }
+</script>
+</html>

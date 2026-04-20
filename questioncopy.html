@@ -1,0 +1,40 @@
+<html>
+<body>
+
+  <div id="question-container">
+    <p>What is the scientific name of a beaver?</p>
+    <input type="text" id="userInput" placeholder="Type your answer here...">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="feedback"></p>
+     <img id="successGif" 
+       src="practice/images/carp.jpg" 
+       style="display:none; width:200px; margin-top:10px;">
+  </div>
+
+  <script>
+   function checkAnswer() {
+  const correctAnswer = "castor canadensis";
+  const userResponse = document.getElementById("userInput").value.trim().toLowerCase();
+  const feedback = document.getElementById("feedback");
+  const gif = document.getElementById("successGif");
+
+  if (userResponse === correctAnswer) {
+    feedback.innerHTML = "Correct! The scientific name is <b>Castor canadensis</b>.";
+    feedback.style.color = "green";
+    
+    gif.style.display = "block";
+
+    setTimeout(() => {
+      gif.style.display = "none";
+    }, 3000); 
+
+  } else {
+    feedback.innerHTML = "Incorrect. Please try again.";
+    feedback.style.color = "red";
+    gif.style.display = "none";
+  }
+}
+  </script>
+
+</body>
+</html>

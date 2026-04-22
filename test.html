@@ -1,0 +1,28 @@
+<html>
+  <body>
+  <style>
+  /* 1. The Class for the Link */
+  .zebra-link {
+    display: inline-block;      /* Essential for the scale effect to work */
+    transition: transform 0.2s; /* Smoothness */
+    text-decoration: none;      /* Removes any default link styling */
+  }
+
+  /* 2. The Hover Effect */
+  .zebra-link:hover {
+    transform: scale(1.1);      /* The "Jump" effect */
+    cursor: pointer;            /* Shows the clickable hand icon */
+  }
+
+  /* 3. The Image Styling */
+  .zebra-img {
+    border: 2px solid #F863EE;  /* Optional: adds a cute pink border */
+    border-radius: 10px;
+  }
+</style>
+
+<a href="zebra-confessions.html" class="zebra-link">
+  <img src="carp.jpg" alt="Zebra Outfit" width="600" height="400" class="zebra-img">
+</a>
+  </body>
+</html>
